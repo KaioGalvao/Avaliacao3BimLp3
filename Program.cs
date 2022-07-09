@@ -161,7 +161,8 @@ if (modelName == "Student")
             }
 
             if(args[2] == "CountByFormed")
-            {
+            {   
+                Console.WriteLine("Número de Estudantes");
                 if(studentRepository.CountByFormed().Any())
                 {
                     foreach (var student in studentRepository.CountByFormed())
